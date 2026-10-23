@@ -1,7 +1,17 @@
 #include <stdio.h>
 
 // Hàm nhập dãy số
-void nhapDaySo(int a[], int n);
+
+void nhapDaySo(int a[], int *n) {
+    printf("Nhap so luong phan tu n: ");
+    scanf("%d", n);
+
+    for (int i = 0; i < *n; i++) {
+        printf("Nhap a[%d]: ", i);
+        scanf("%d", &a[i]);
+    }
+}
+
 
 // Hàm xuất dãy số
 
